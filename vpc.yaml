@@ -7,7 +7,7 @@ Resources:
       EnableDnsHostnames: 'true'
       Tags:
        - Key: stack
-         Value: production
+         Value: staging
   ipv6CidrBlock:
     Type: AWS::EC2::VPCCidrBlock
     Properties:
@@ -22,7 +22,7 @@ Resources:
       EnableDnsHostnames: 'false'
       Tags:
        - Key: stack
-         Value: production
+         Value: staging
   ipv6CidrBlock:
     Type: AWS::EC2::VPCCidrBlock
     Properties:
