@@ -1,21 +1,12 @@
-
-        Resources:
-          MyBucket:
-            Type: 'AWS::S3::Bucket'
-            Properties:
-              BucketName: my-bucket
-              OwnershipControls:
-                Rules:
-                - ObjectOwnership: BucketOwnerPreferred
-              AccessControl: AwsExecRead              
+Resources:
+    MyBucket:
+      Type: 'AWS::S3::Bucket'
+       Properties:
+          BucketName: my-bucket
+          OwnershipControls:
+            Rules:
+            - ObjectOwnership: BucketOwnerPreferred
+          AccessControl: AwsExecRead              
       
-        Resources:
-          NewBucket:
-            Type: 'AWS::S3::Bucket'
-            Properties:
-              BucketName: new-bucket
-              OwnershipControls:
-                Rules:
-                - ObjectOwnership: BucketOwnerPreferred
-              AccessControl: AwsExecRead              
+              
       
